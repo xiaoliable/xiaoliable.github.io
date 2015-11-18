@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "About Xiaoliable"
 description: "嘿，你总算找到我啦"
 header-img: "img/plane.jpg"
 ---
@@ -9,11 +9,12 @@ header-img: "img/plane.jpg"
     <p><img src="http://dreamofbook.qiniudn.com/Zero.png" align="center"></p>
 </center>
 
-Ehhhh...I know it's not a good question.
+--- To understand the data, and the world. ---
+   I am a curious and tough man. And I have high enthusiasm to do some challenging and significant work.
+   In my opinion, the most important personal ability is the health of body. Second is the attitude towards work and life. Then next is the abilities of thinking and practice. Finally, there are plenty of funny things remained us to discover and explore etc.
+   So in view of the first, I like to do kinds of sports in spare time. Maybe I am not good at anyone, but I have fun with anyone. Haha~
 
-My Name is Azeril. You may find me in sites like douban.com / Goodreads.com / Facebook / Instagram / Twitter / Weibo.com, so on and so forth. It’s easy to know me. My short name is Az., quite easy to remember, right?
+——Xiaoliable
 
-喜欢折腾的伪技术宅。一点点 geek，一丢丢的执著，就像吃烧烤时多少会撒一点孜然，恰到好处就够。日常之中，多的是折腾劲，也希望能添几分专注、几许勇敢。这就是我。
 
-——Azeril
-
+(You also can find me in [Github](https://github.com/xiaoliable), [Douban](http://www.douban.com/people/xiaoliable/), [Weibo](http://weibo.com/xiaoliable), [Zhihu](http://www.zhihu.com/people/xiao-xiao-3-62), [CSDN](http://blog.csdn.net/li_ablexiao), [Twitter](https://twitter.com/xiaoliable).)

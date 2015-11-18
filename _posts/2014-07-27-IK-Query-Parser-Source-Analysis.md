@@ -1,33 +1,68 @@
-0731~0808 
+---
+layout: post  
+title: IKQueryParser主类分析 
+categories: [blog ]  
+tags: [Tech, ]  
+description: 「IKAnalyzer中Query分词的源代码主要实现」   
+---
+
+## 大体流程
+
+IKQueryParser此类是在指定field与query条件下，执行主方法_parse：
+1、首先调用IKSegmentation类进行lexeme分词；
+2、紧接着调用核心方法accpet将每个lexeme生成对应的tokenbranch（其过程内有一系列关键方法，比如accept方法）；
+3、生成完整的tokenbranch以后（tokenbranch数据结构有点复杂稍后分析），执行关键方法toQueries将分支数据结构（tokenbranch）转成Query数据结构；
+4、执行optimizeQueries方法，优化Query队列结构，减少Query表达式的嵌套，返回相应具体的TermQuery或BooleanQuery。
 
 
-Daodao：
-天灰灰 风乱吹 大理石的柱子依然滚烫 不知何时落下的雨 却又凉爽？也许是沉沉的天 沉闷的雨 沉默了我 0731
+## 分析过程
 
-这个国家是先有暴力机关再有人民政府的 而一切还是归领导者的组织说了算。哪个重要还是看得见的。鸡蛋总碰不过石头的 这是太祖在当年就悟出的真理。几十年过去了 只想在其后添一句 石头够硬 但鸡蛋才是生命。八一了 祖国节日不多 各位快乐 0801
+首先理解此类生成的tokenbranch花了很多功夫，以下是一些初始分析过程：
+ 
+1、初始参数、代码结构解析：
 
-争论中不免会有自己所把持观点的动摇之时 但须知有动摇才有坚定。一个人从来都是平静无澜的状态 要么他是真的极有洞察力和远见 要么 根本就是坐壁上观 0801
+![lip_image001](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image001.png)
 
-总得开始的 总得改变 没有那么多既定的规则 日子没有一成不变的模样 你我也没有一如既往的心情。有温柔安心的陪伴 有不可开交的争吵 理解 误解 各有季节。不要太沉迷 世界很大 视野太小 不见得美好。丢开小情绪 远离感染体。总会有结局 总会有遇见 关键是 自己怎么看 0803
+optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构一样复杂。
 
-让自己的足迹 清晰而有力；让自己的呼吸 平稳而透明。不要太计较 计较；把手边事做好 就好 0803
+![lip_image002](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image002.png)
 
-每天都在快乐和悲伤中挣扎扑腾。快乐是显见的 悲伤是莫名的。乃至于说 人声鼎沸中 诱发快乐的那些因子里 又何尝不潜藏着悲哀与无力。我们在笑 在自娱自乐有时也的确能自得其乐。也因为 这或许也是我们所能做的最好的也是唯一的抗争 0804
+核心方法_parse过程分析：发现生成tokenbranch结构关键方法为accept，accept方法中acceptType表明了正在处理的lexeme与此branch的关系，由于是递归调用理解起来要花一点功夫。
 
-每一个ID背后 都是生命 可惜 我总没法了解很多。不因为距离 不因为陌生 不因为彼此的拍子不同 也不因为时间 那并非存在的缘分。只是 每一个生命不可理解的部分太多 0805
+![lip_image003](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image003.png)
 
-我不喜欢太沉默寡言的人 也不喜欢总热衷于喧哗热闹的人；我不喜欢没有上进心的人 也不喜欢专意投机钻营的人；我不喜欢对一切无动于衷的人 也不喜欢总大惊小怪的人；我不喜欢没有理想的人 也不喜欢只会做梦的人；我不喜欢习惯懒惰的人 也不喜欢一味忙碌的人；我不喜欢笨蛋 但可以习惯 0805
+具体accptType值生成方法cheakAccept过程：
 
-时间是有成本的 做一件无意义的事的坏处 不只是浪费了自己精力 也直接占据掉了我们去做有意义的事的时间 0805
+![lip_image004](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image004.png)
 
-生活本就是那样千丝万缕的 感情更是了 有时也难以界定什么是什么 只能自己做主观判定。就如对于说喜欢 不同的人说 或听 都是不同涵义 而有共同经历的人有这个默契去体会 至少有这个机会。经历不也有很多种麽 有些是行动的跟随有些是思维的碰撞 只是时间久了 不是有心无力 就是有口无心 0806
+2、TokenBranch值的debug过程：
 
-梅师姐应该只和过节的有过节 对吧～——给一个有台风光临的七夕 0806
+![lip_image005](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image005.png)
 
-这个世界上，没有人真正可以对另一个人的伤痛感同身受。你万箭穿心，你痛不欲生，仅仅是你一个人的事情，别人也许会同情，也许会嗟叹，但永远不清楚你伤口究竟溃烂到何种境地。你错过的人和事，别人才有机会遇见，别人错过了，你才有机会拥有。人人都会错过，人人都曾错过，真正属于你的永远不会错过。 ViaNet
+![lip_image006](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image006.png)
 
-每一个人都是各自完整的。哪怕是相爱时 一个人也应该保持独立。一个独立而自我的女孩 总是更漂亮 也更有魅力。哪怕和自己爱的人 也可以有些距离 保持一个专属于自己的空间 独自面对自己。从中可以汲取安宁 自由和勇气 从而 在生活之中 更好地爱自己爱的人。0807
+3、TokenBranch值的结构实例：
 
-没被爱过 连拒绝七夕的资格都没有 如同没被喜欢着 发脾气的地方都没有 0807
+![lip_image007](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image007.png)
 
-我们注定是属于和互联网络一起长大的一代人 但倘若每天只是开个破浏览器 看点电视剧搞笑视频 刷个八卦论坛 挂个扣或摁死摁 上会SNS 互相聊天无非抱怨 那么真的没多大意思 无聊状态不是通过无聊的事可以打发的 只有改变 去认识更多有趣的人 去接触更广阔的世界 去成长 成为有分享精神的 自我 自由的人 0807
+4、TokenBranch值的结构分析：
+
+![lip_image008](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image008.png)
+
+（这是最直观的Tokenbranch结构图，非常有助于理解）
+ 
+5、最终生成简洁的Query结构数据实例：
+ 
+![lip_image009](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image009.png)
+
+ 
+参考图：
+
+![lip_image010](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image010.png)
+
+
+
+附：例举Query语法树
+
+![clipboard](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/clipboard.png)
+
