@@ -39,7 +39,7 @@ optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构�
 
 ![lip_image005](/img/2014-07-27-IKAnalyzer/lip_image005.png)
 
-![lip_image006](/img/2014-07-27-IKAnalyzer/lip_image006.png =586x "")
+![lip_image006](/img/2014-07-27-IKAnalyzer/lip_image006.png)
 
 3、TokenBranch值的结构实例：
 
@@ -47,7 +47,7 @@ optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构�
 
 4、TokenBranch值的结构分析：
 
-![lip_image008](/img/2014-07-27-IKAnalyzer/lip_image008.png =700x "")
+![lip_image008](/img/2014-07-27-IKAnalyzer/lip_image008.png =720x480)
 
 （这是最直观的Tokenbranch结构图，非常有助于理解）
  
@@ -64,5 +64,5 @@ optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构�
 
 附：例举Query语法树
 
-![clipboard](/img/2014-07-27-IKAnalyzer/clipboard.png =800x "")
+![clipboard](/img/2014-07-27-IKAnalyzer/clipboard.png =800x640)
 
