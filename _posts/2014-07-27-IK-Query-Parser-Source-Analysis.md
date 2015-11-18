@@ -64,5 +64,5 @@ optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构�
 
 附：例举Query语法树
 
-![clipboard](/img/2014-07-27-IKAnalyzer/clipboard.png =800x640)
+![clipboard](/img/2014-07-27-IKAnalyzer/simpleExample.jpg =800x640)
 
