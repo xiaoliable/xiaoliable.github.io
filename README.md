@@ -1,11 +1,12 @@
-# Microdust 微尘
+# Xiaoliable 逍
 
-This is a blog created by Azeril. The blog is live at [azeril.me](http://azeril.me/).
+This is a blog created by Xiaoliable. 
 
 ## Thanks
 
 The blog used many tool/service,many thanks to:
 
+* [Azeril](http://azeril.me/), a revision of Jekyll;
 * [Github](https://github.com/), all the data based on;
 * [Git](https://git-scm.com/), blogs and code files version control system;
 * [Jekyll](http://jekyllrb.com/), a static site generator;
@@ -16,11 +17,6 @@ The blog used many tool/service,many thanks to:
 * [Google](http://google.com), the one who tell me how to make it.
 * …
 
-## How To Creat A Jekyll Blog
-
-[Build-Your-First-GitHub-Pages-Blog](http://azeril.me/blog/2015/10/19/Build-Your-First-GitHub-Pages-Blog/)
-
-Build your blog Step by step
 ## Just write
 
-Start writing now！
+Start writing now！ 2015-11-18
