@@ -21,48 +21,48 @@ IKQueryParser此类是在指定field与query条件下，执行主方法_parse：
  
 1、初始参数、代码结构解析：
 
-![lip_image001](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image001.png)
+![lip_image001](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image001.png)
 
 optimizeQueries方法将生成的Query结构优化，防止跟tokenbranch结构一样复杂。
 
-![lip_image002](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image002.png)
+![lip_image002](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image002.png)
 
 核心方法_parse过程分析：发现生成tokenbranch结构关键方法为accept，accept方法中acceptType表明了正在处理的lexeme与此branch的关系，由于是递归调用理解起来要花一点功夫。
 
-![lip_image003](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image003.png)
+![lip_image003](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image003.png)
 
 具体accptType值生成方法cheakAccept过程：
 
-![lip_image004](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image004.png)
+![lip_image004](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image004.png)
 
 2、TokenBranch值的debug过程：
 
-![lip_image005](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image005.png)
+![lip_image005](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image005.png)
 
-![lip_image006](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image006.png)
+![lip_image006](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image006.png)
 
 3、TokenBranch值的结构实例：
 
-![lip_image007](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image007.png)
+![lip_image007](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image007.png)
 
 4、TokenBranch值的结构分析：
 
-![lip_image008](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image008.png)
+![lip_image008](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image008.png)
 
 （这是最直观的Tokenbranch结构图，非常有助于理解）
  
 5、最终生成简洁的Query结构数据实例：
  
-![lip_image009](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image009.png)
+![lip_image009](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image009.png)
 
  
 参考图：
 
-![lip_image010](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/lip_image010.png)
+![lip_image010](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/lip_image010.png)
 
 
 
 附：例举Query语法树
 
-![clipboard](xiaoliable.github.io/img/2014-07-27-IKAnalyzer/clipboard.png)
+![clipboard](https://github.com/xiaoliable/xiaoliable.github.io/blob/master/img/2014-07-27-IKAnalyzer/clipboard.png)
 
