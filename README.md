@@ -6,7 +6,7 @@ This is a blog created by Xiaoliable.
 
 The blog used many tool/service,many thanks to:
 
-* [Azeril](http://azeril.me/), a revision of Jekyll;
+* [Azeril](http://azeril.me/), a revision of Jekyll, I learn to start this blog from this Azeril's [blog article](http://azeril.me/blog/Build-Your-First-GitHub-Pages-Blog.html);
 * [Github](https://github.com/), all the data based on;
 * [Git](https://git-scm.com/), blogs and code files version control system;
 * [Jekyll](http://jekyllrb.com/), a static site generator;
