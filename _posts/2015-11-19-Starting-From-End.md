@@ -26,7 +26,7 @@ optimistic;
 
 * MOOC;
 * Revise some ML and Java;
-* Read some papers and books;
+* Read more papers and books;
 * Prepare the material;
 * Train English L&S, recognize and use words;
 * Talk to other people like professors and students;
