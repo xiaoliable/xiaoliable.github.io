@@ -13,6 +13,7 @@ header-img: "img/plane.jpg"
    I am a curious and tough man. And I have high enthusiasm to do some challenging and significant work.
    In my opinion, the most important personal ability is the <b>health</b> of body. Second is the attitude towards work and life. Then next is the abilities of thinking and practice. Finally, there are plenty of funny things remained us to discover and explore etc.
    So in view of the first, I like to do kinds of sports in spare time. Maybe I am not good at anyone, but I have fun with anyone. And then to understand the world by plentiful data, I indulge in studying meaningful methods like <b>machine learning</b>.
+   Also in extracurricular time, I enjoy playing basketball, excursion, reading, watch documentaries, reasoning movies and science fictions (any funny things)....... 
 
 ——Xiaoxiao Li(Xiaoliable)
 
