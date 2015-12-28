@@ -18,6 +18,6 @@ header-img: "img/plane.jpg"
 ——Xiaoxiao Li(Xiaoliable)
 
 <!-- , [CSDN](http://blog.csdn.net/li_ablexiao) -->
-(You also can find me in [Github](https://github.com/xiaoliable), [Linkedin](https://www.linkedin.com/in/xiaoliable), [Facebook](https://www.facebook.com/leeble.xiao), [Twitter](https://twitter.com/xiaoliable), [Douban](http://www.douban.com/people/xiaoliable/), [Weibo](http://weibo.com/xiaoliable), [Zhihu](http://www.zhihu.com/people/xiaoliable).)
+(You also can find me in <b>[Linkedin](https://www.linkedin.com/in/xiaoliable)</b>,  <b>[Github](https://github.com/xiaoliable)</b>,[Facebook](https://www.facebook.com/leeble.xiao), [Twitter](https://twitter.com/xiaoliable), <b>[Douban](http://www.douban.com/people/xiaoliable/)</b>, <b>[Weibo](http://weibo.com/xiaoliable)</b>, [Zhihu](http://www.zhihu.com/people/xiaoliable).)
 
 
