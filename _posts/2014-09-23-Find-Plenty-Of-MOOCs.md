@@ -11,15 +11,12 @@ Nowadays we can learn many awesome knowledge and courses in Internet...
 ## In Famous University Websites
 
 
-* [So Many Courses in EECS [MIT ocw]](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/),
-![lip_image001](/img/2015mooc/MITocw.png)
+* [So Many Courses in EECS [MIT ocw]](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/), ![lip_image001](/img/2015mooc/MITocw.png)
 
-* [Various Nice Courses [Upenn]](http://openlearning.upenn.edu/courses/),
-![lip_image002](/img/2015mooc/Upenn.png)
+* [Various Nice Courses [Upenn]](http://openlearning.upenn.edu/courses/), ![lip_image002](/img/2015mooc/Upenn.png)
 
 
-* [Learn From Data [Caltech]](http://work.caltech.edu/telecourse.html),
-![lip_image003](/img/2015mooc/LearningFD.png)
+* [Learn From Data [Caltech]](http://work.caltech.edu/telecourse.html), ![lip_image003](/img/2015mooc/LearningFD.png)
 * [Probabilistic Systems Analysis and Applied Probability [MIT]](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/),
 * [CS 61AS - Structure and Interpretation of Computer Programs [UCB]](http://www.cs61as.org/),
 * [CS224d: Deep Learning for Natural Language Processing [Stanford]](http://cs224d.stanford.edu/syllabus.html),
