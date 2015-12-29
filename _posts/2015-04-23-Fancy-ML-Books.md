@@ -43,7 +43,7 @@ NOTE: Jordan's classical work. It shows his deep thinking, and it is the best re
 
 * __Multiple View Geometry in Computer Vision__
 ![lip_image006](/img/2015MLBookList/MultipleViewGeometryCV.jpg)
-NOTE: Hartley's this amazing book feed countless doctors and professors. There are part codes of this book. If you are interesting in it, also you can read "In Defense of the Eight-Point Algorithm" published in 1997. This book is very rigorous and its algorithms are not difficult to understand. And the best part is the pseudo-code algorithms that is very, very helpful and understanding~
+NOTE: Hartley's this amazing book feed countless doctors and professors. There are part codes of this book in [ox's vgg website](http://www.robots.ox.ac.uk/~vgg/). If you are interesting in it, also you can read "In Defense of the Eight-Point Algorithm" published in 1997. This book is very rigorous and its algorithms are not difficult to understand. And the best part is the pseudo-code algorithms that is very, very helpful and understanding~
 
 ---
 
