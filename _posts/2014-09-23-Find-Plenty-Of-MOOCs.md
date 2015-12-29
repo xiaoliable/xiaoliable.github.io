@@ -25,7 +25,7 @@ Nowadays we can learn many awesome knowledge and courses in Internet...
 
 
 ## Many Websites to learn
-	Such as Coursera, edX, Udacity, Khan Academy, Stanford Online, YouTube, TED, [datacamp](https://www.datacamp.com/), 学堂在线, 网易公开课, and so on.
+Such as Coursera, edX, Udacity, Khan Academy, Stanford Online, YouTube, TED, [datacamp](https://www.datacamp.com/), 学堂在线, 网易公开课, and so on.
 
 * [Machine learning [YouTube]](https://www.youtube.com/results?search_query=machine+learning),
 * [Introduction to Recommender Systems [Coursera]](https://www.coursera.org/learn/recommender-systems),
