@@ -51,7 +51,7 @@ Chinese:
  * 人们喜欢给各种食物加上各种标签，就像Python的字典，Java的map。。但是这往往意味着信息的丢失，以偏概全，使得以后容易犯“先入为主”的错误。就像先入为主这个词语，不学这个成语可以有先到为王的意思; 再往高层抽象，“先”可以为“祖先”的意思; 抽象，“先”可以换成同音字“仙”考虑。。。可以无限# 发散思维 #。。。
  * 
 
-## Thinking
+## Thinking Process
 
 I think people will think just because they need or want to do something. The desired need such as dream, sluggishness motivates the thought and action. And everyone has their own thought way, some efficient and some usually frozen.
 Learning some fundamental machine learning algorithms really help me to retrospect our learning process. Firstly, we always start thinking from self-knowledge and apperceiving outside environment. And before thinking and learning, we need crystallize our goal like optimization objective even evaluation criterion. Secondly, according to the learning model trained by the historical lesson and ourselves experience, we can get our answer. Then the returned answer will affect the environment included ourselves. So we can get feedback from our judgement basis. Certainly, we can regularly reflect the feedback, input, output, environment even our goal or model to make our integral model more efficient, extensible, flexible and robust. Also we can improve and enrich the thinking model, which definitely deepens our understanding about ourselves and the world. 
