@@ -14,7 +14,8 @@ description: 「Think about life now and everyday」
 ## Thinking
 * Con:(Sometimes)
 timid;
-sluggish;<!--sluggish;-->
+sluggish;
+<!--sluggish;-->
 philanthropic;(too much thinking..)
 
 * Pro:
